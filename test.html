@@ -1,8 +1,405 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Hello</title>
-  </head>
-  <body>
-    Hello GitHub
-  </body
+<head>
+	<title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="resume.js"></script>
+    <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+	<style type="text/css">
+		.nav{
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+}
+li{
+    width: 15px;
+    height: 15px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 10px; /*當border-radius的大小超過長和寬的一半時，它就變變成圓形*/
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5) inset,-1px -1px 1px rgba(0,0,0,0.5) inset; /*用來製造陰影*/
+    list-style-type: none; /*把原本ul標籤會有的標點拿掉*/
+    cursor: pointer;
+}
+.p1{
+    background-image: url(p_5.jpg);
+    background-size: cover; /*盡可能的放滿整個背景頁面*/
+    height: 100vh;
+
+}
+.block{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1518px;
+    height: 730px;
+    background-color: rgba(242,242,242,0.2);
+}
+.name{
+    position: absolute;
+    top:200px;
+    left: 535px;
+    font-size: 90px;
+    font-family: AR BLANCA;
+    color: White;
+}
+.sub{
+    position: absolute;
+    top:400px;
+    left: 685px;
+    font-size: 25px;
+    font-family: 微軟正黑體;
+    color: white;
+}
+.section1{
+    position: absolute;
+    top: 729px;
+    width: 1503px;
+    height: 650px;
+    background-color: rgba(255,250,240);
+}
+.ch_name{
+    position: absolute;
+    left: 710px;
+    font-size: 35px;
+    font-family: 微軟正黑體;
+    color: rgba(38,38,38);
+}
+.aut_b{
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    width: 500px;
+    font-size: 18px;
+    line-height: 35px;
+    text-indent: 2em; /*em是相對單位,2em即現在一個字大小的兩倍*/
+    text-align: justify;
+    color: rgba(38,38,38);
+}
+.section1 img{
+    position: absolute;
+    top: 80px;
+    left: 1000px;
+}
+.section2{
+    position: absolute;
+    top:1200px;
+    width: 1503px;
+    height: 720px;
+    background: white;
+}
+.block1{
+    position: absolute;
+    width: 850px;
+    height: 470px;
+    background-color: rgba(255,250,240);
+}
+.pro{
+    position: absolute;
+    top: -10px;
+    left: 326px;
+    font-size: 28px;
+    font-family: 微軟正黑體;
+    color: rgba(38,38,38);
+}
+.pro_sub{
+    position: absolute;
+    top:40px;
+    left: 343px;
+    font-size: 17px;
+    font-family: Book Antiqua;
+    color: rgba(38,38,38);
+}
+.block1 img{
+    position: absolute;
+    top: 90px;
+    left: 150px;
+}
+.block2{
+    position: absolute;
+    top:400px;
+    width: 850px;
+    height: 350px;
+    background-color: rgba(236,191,160);
+}
+.exp{
+    position: absolute;
+    left: 326px;
+    font-size: 28px;
+    font-family: 微軟正黑體;
+    color: rgba(38,38,38);
+}
+.exp_sub{
+    position: absolute;
+    top:50px;
+    left: 343px;
+    font-size: 17px;
+    font-family: Book Antiqua;
+    color: rgba(38,38,38);
+}
+.work{
+    position: absolute;
+    top: 90px;
+    left: 150px;
+    font-size: 18px;
+    font-family: 微軟正黑體;
+    text-align: center;
+    line-height: 40px;
+    color: rgba(38,38,38);
+}
+.other{
+    position: absolute;
+    top: 110px;
+    left: 450px;
+    font-size: 18px;
+    font-family: 微軟正黑體;
+    text-align: left;
+    line-height: 40px;
+    color: rgba(38,38,38);
+}
+.block3{
+    position: absolute;
+    left: 850px;
+    width: 650px;
+    height: 770px;
+}
+.certificate{
+    position: absolute;
+    top: -10px;
+    left: 270px;
+    font-size: 28px;
+    font-family: 微軟正黑體;
+    color: rgba(38,38,38);
+}
+.certificate_sub{
+    position: absolute;
+    top:40px;
+    left: 290px;
+    font-size: 17px;
+    font-family: Book Antiqua;
+    color: rgba(38,38,38);
+}
+.certificate_title{
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    width: 500px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: left;
+    color: rgba(38,38,38);
+}
+.section3{
+    position: absolute;
+    top: 1900px;
+    width: 1503px;
+    height: 720px;
+    background-color: rgba(255,250,240);
+}
+.score3{
+    position: absolute;
+    top: 45px;
+    left: 70px;
+}
+.score4{
+    position: absolute;
+    top: 170px;
+    left: 950px;
+}
+.context{
+    position: absolute;
+    top: 30px;
+    left: 950px;
+    width: 500px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: left;
+    color: rgba(38,38,38);
+}
+.score1{
+    position: absolute;
+    top: 300px;
+    left: 700px;
+}
+.score2{
+    position: absolute;
+    top: 300px;
+    left: 30px;
+}
+.section4{
+    position: absolute;
+    top: 2623px;
+    width: 1503px;
+    height: 720px;
+}
+.msg{
+    position: absolute;
+    top:3px;
+    left: 690px;
+    font-size: 28px;
+    font-family: 微軟正黑體;
+    color: rgba(38,38,38);
+}
+.msg_sub{
+    position: absolute;
+    top:54px;
+    left: 685px;
+    font-size: 17px;
+    font-family: Book Antiqua;
+    color: rgba(38,38,38);
+}
+.section4 i{
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+    color: rgba(51,63,80);
+}
+.contact{
+    position: absolute;
+    top: 350px;
+    left: 934px;
+    font-size: 18px;
+    font-family: Book Antiqua,微軟正黑體;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(38,38,38);
+}
+.view_work{
+    position: absolute;
+    top: 500px;
+    left: 1000px;
+    width: 140px;
+    font-size: 15px;
+    font-family: Book Antiqua,微軟正黑體;
+    line-height: 35px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(166,166,166);
+    border: none;
+    border-radius: 30px;
+}
+.goto_top{
+    position: absolute;
+    top: 350px;
+    left: 300px;
+    cursor: pointer;
+}
+.footer{
+    position: absolute;
+    top: 640px;
+    width: 1503px;
+    height: 80px;
+    background-color: rgba(236,191,160);
+}
+.copy_right{
+    position: absolute;
+    top: 10px;
+    left: 700px;
+    font-size: 18px;
+    font-family: AR BLANCA;
+    line-height: 40px;
+    color: rgba(38,38,38);
+}
+.section5{
+    position: absolute;
+    top: 729px;
+    width: 1503px;
+    height: 400px;
+    background: white;
+}
+
+	</style>
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li style="background-color:rgba(157,195,230);"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="p1"></div>
+<div class="block"></div>
+<div class="name">
+    <p>Chang Hsin-I</p>
+</div>
+<div class="sub">
+    <p>個人簡歷網站</p>
+</div>
+<div class="section1">
+    <p class="ch_name">張心怡</p>
+    <p class="aut_b">我來自桃園市，目前就讀國立高雄科技大學金融資訊系四年級，我是一位積極上進的女孩。
+       父親退休前為生活百貨店老闆，因此自小教導我使用POS收銀系統，培養我對金錢的敏銳度，而父親對投資理財研究多年，時常傳授我投資觀念與實戰經歷，母親目前任職於貿易公司，家中有一位弟弟，目前就讀中華大學資訊工程學系-人工智慧組。
+    </p>
+    <img src="me.png" width="18%">
+</div>
+<div class="section2">
+    <div class="block1">
+        <p class="pro">專業技能</p>
+        <p class="pro_sub">Profession</p>
+        <img src="skill.png" width="65%">
+    </div>
+    <div class="block2">
+        <p class="exp">特殊經歷</p>
+        <p class="exp_sub">Experience</p>
+        <div class="work">
+            <p>家樂福楠梓店收銀員</p>
+            <p>阿榮鐵板燒內服務員</p>
+            <p>北區國稅局櫃台實習</p>
+        </div>
+        <div class="other">
+            <p>校隊女籃球隊經理</p>
+            <p>高科大校運盃工作人</p>
+        </div>
+    </div>
+    <div class="block3">
+        <p class="certificate">專業證照</p>
+        <p class="certificate_sub">Certificate</p>
+        <div class="certificate_title">
+            <p>●&emsp;TOEIC 850</p>
+            <p>●&emsp;證券投資信託事業證券投資顧問事業業務員</p>
+            <p>●&emsp;證券商業務人員 (高級業務員)</p>
+            <p>●&emsp;證券商業務人員 (業務員)</p>
+            <p>●&emsp;銀行內部控制與內部稽核</p>
+            <p>●&emsp;人身保險業務員資格測驗</p>
+            <p>●&emsp;Python 初級能力檢定</p>
+            <p>●&emsp;Essential Statistics for Data Analysis using Excel</p>
+            <p>●&emsp;Analyzing and Visualizing Data with Power BI</p>
+        </div>
+    </div>
+</div>
+<div class="section3">
+    <img src="score3.png" width="55%" class="score3">
+    <img src="score4.png" width="18%" class="score4">
+    <div class="context">
+        <p>◆　班(系)排名/人數：5/44　百分比：11.36%</p>
+        <p>◆　TOIEC 850 通過英語畢業門檻 </p>
+    </div>
+    <img src="score1.png" width="47%" class="score1">
+    <img src="score2.png" width="42%" class="score2">
+</div>
+<div class="section4">
+    <p class="msg">想說的話</p>
+    <p class="msg_sub">Leave a message...</p>
+    <i class="fas fa-user-alt fa-8x"></i>
+    <div class="contact">
+        <p class="phone">電話：0938305205</p>
+        <p class="email">E-mail：nancy65018@gmail.com</p>
+    </div>
+    <a href="score.html" class="view_work">前往作品</a>
+    <div class="goto_top">
+        <i class="fas fa-arrow-circle-up fa-2x"></i>
+    </div>
+    <div class="footer">
+        <p class="copy_right">© 2020 By Chang Hsin-I</p>
+    </div>
+</div>
+<!--<div class="section5">
+    
+</div>-->
+</body>
 </html>
