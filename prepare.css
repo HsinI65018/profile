@@ -1,0 +1,302 @@
+.nav{
+    position: fixed;
+    top: 40%;
+    right: 20px;
+    z-index: 1;
+}
+li{
+    width: 15px;
+    height: 15px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 10px; /*當border-radius的大小超過長和寬的一半時，它就變變成圓形*/
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5) inset,-1px -1px 1px rgba(0,0,0,0.5) inset; /*用來製造陰影*/
+    list-style-type: none; /*把原本ul標籤會有的標點拿掉*/
+    cursor: pointer;
+}
+.p1{
+    background-image: url(p_8.jpg);
+    background-size: cover; /*盡可能的放滿整個背景頁面*/
+    height: 50vh;
+}
+.block{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1518px;
+    height: 730px;
+    background-color: rgba(242,242,242,0.2);
+}
+.name_main{
+    position: absolute;
+    top:60px;
+    left: 600px;
+    font-size: 70px;
+    font-family: Book Antiqua;
+    color: #19394D;
+}
+.name_sub{
+    position: absolute;
+    top:210px;
+    left: 640px;
+    font-size: 20px;
+    font-family: Book Antiqua,微軟正黑體;
+    color: #19394D;
+}
+.github{
+    position: absolute;
+    top:300px;
+    left: 640px;
+    font-size: 16px;
+    font-family: Book Antiqua;
+    color: #19394D;
+    text-decoration: none;
+    width: 155px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid;
+}
+.resume{
+    position: absolute;
+    top:300px;
+    left: 840px;
+    font-size: 16px;
+    font-family: Book Antiqua;
+    color: #19394D;
+    text-decoration: none;
+    width: 155px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid;
+}
+.name h2{
+	position: absolute;
+    top:370px;
+    left: 300px;
+    font-family: 微軟正黑體;
+    color: #19394D;
+}
+.content{
+	position: absolute;
+    top:430px;
+    left: 300px;
+    width: 950px;
+    height: 250px;
+    font-size: 17.5px;
+    font-family: Book Antiqua,微軟正黑體;
+    line-height: 32px;
+    color: #19394D;
+    white-space: pre-wrap;
+	text-indent: 2em;
+}
+.section1{
+    position: absolute;
+    top: 730px;
+    width: 1503px;
+    height: 320px;
+    background-color: rgba(255,250,240);
+    /*background-color: red;*/
+}
+.section1 h2{
+	position: absolute;
+    top:5px;
+    left: 300px;
+    font-family: 微軟正黑體;
+    color: #19394D;
+}
+.section1 p{
+	position: absolute;
+    top: 60px;
+    left: 300px;
+    width: 950px;
+    height: 250px;
+	font-size: 17.5px;
+    font-family: Book Antiqua,微軟正黑體;
+    line-height: 32px;
+    color: #19394D;
+    white-space: pre-wrap;
+	text-indent: 2em;
+}
+.section2{
+    position: absolute;
+    top:1050px;
+    width: 1503px;
+    height: 630px;
+    /*background-color: black;*/
+}
+.section2 h2{
+	position: absolute;
+    top:5px;
+    left: 300px;
+    font-family: 微軟正黑體;
+    color: #19394D;
+}
+.s2_content{
+	position: absolute;
+    top: 60px;
+    left: 300px;
+    width: 950px;
+    height: 450px;
+	font-size: 17.5px;
+    font-family: Book Antiqua,微軟正黑體;
+    line-height: 33px;
+    color: #19394D;
+    white-space: pre-wrap;
+}
+b{
+	font-size: 18px;
+	color: #37A484;
+}
+.work{
+    position: absolute;
+    top: 525px;
+    left: 300px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Book Antiqua,微軟正黑體;
+    line-height: 33px;
+    color: #19394D;
+    
+}
+.section2 a{
+    font-size: 17.5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #723399;
+}
+.section3{
+    position: absolute;
+    top: 1680px;
+    width: 1503px;
+    height: 360px;
+    background-color: rgba(255,250,240);
+    /*background-color: red;*/
+}
+.section3 h2{
+	position: absolute;
+    top:5px;
+    left: 300px;
+    font-family: 微軟正黑體;
+    color: #19394D;
+}
+.section3 p{
+	position: absolute;
+    top: 60px;
+    left: 300px;
+    width: 950px;
+    height: 250px;
+	font-size: 17.5px;
+    font-family: Book Antiqua,微軟正黑體;
+    line-height: 32px;
+    color: #19394D;
+    white-space: pre-wrap;
+    text-indent: 2em;
+}
+.section4{
+    position: absolute;
+    top: 2040px;
+    width: 1503px;
+    height: 610px;
+    /*background-color: black;*/
+}
+.section4 h2{
+    position: absolute;
+    top:5px;
+    left: 300px;
+    font-family: 微軟正黑體;
+    color: #19394D;
+}
+.section4 p{
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    width: 950px;
+    height: 250px;
+    font-size: 17.5px;
+    font-family: Book Antiqua,微軟正黑體;
+    line-height: 32px;
+    color: #19394D;
+    white-space: pre-wrap;
+    text-indent: 2em;
+}
+.section4 img{
+    position: absolute;
+    top: 190px;
+    left: 500px;
+    height: 60%
+}
+.section5{
+    position: absolute;
+    top: 2650px;
+    width: 1503px;
+    height: 200px;
+    background-color: rgba(255,250,240);
+   /*background: red;*/
+}
+.section5 h2{
+    position: absolute;
+    top:5px;
+    left: 300px;
+    font-family: 微軟正黑體;
+    color: #19394D;
+}
+.section5 p{
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    width: 950px;
+    height: 250px;
+    font-size: 17.5px;
+    font-family: Book Antiqua,微軟正黑體;
+    line-height: 32px;
+    color: #19394D;
+    white-space: pre-wrap;
+    text-indent: 2em;
+}
+.section6{
+    position: absolute;
+    top: 2850px;
+    width: 1503px;
+    height: 340px;
+    /*background: black;*/
+}
+.section6 h2{
+    position: absolute;
+    top:5px;
+    left: 300px;
+    font-family: 微軟正黑體;
+    color: #19394D;
+}
+.section6 p{
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    width: 950px;
+    height: 250px;
+    font-size: 17.5px;
+    font-family: Book Antiqua,微軟正黑體;
+    line-height: 32px;
+    color: #19394D;
+    white-space: pre-wrap;
+    text-indent: 2em;
+}
+.footer{
+    position: absolute;
+    top: 3170px;
+    width: 1503px;
+    height: 80px;
+    background-image: url(p_8.jpg);
+    background-size: cover; /*盡可能的放滿整個背景頁面*/
+    height: 12vh;
+}
+.copy_right{
+    position: absolute;
+    top: 10px;
+    left: 700px;
+    font-size: 18px;
+    font-family: AR BLANCA;
+    line-height: 40px;
+    color: rgba(38,38,38);
+}
