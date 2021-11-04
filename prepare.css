@@ -19,14 +19,6 @@ li{
     background-size: cover; /*盡可能的放滿整個背景頁面*/
     height: 50vh;
 }
-.block{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 1518px;
-    height: 730px;
-    background-color: rgba(242,242,242,0.2);
-}
 .name_main{
     position: absolute;
     top:60px;
