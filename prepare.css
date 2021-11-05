@@ -49,6 +49,9 @@ li{
     line-height: 40px;
     border: 1px solid;
 }
+.github:hover{
+    background-color: rgb(117,191,209,0.4);
+}
 .resume{
     position: absolute;
     top:300px;
@@ -62,6 +65,9 @@ li{
     text-align: center;
     line-height: 40px;
     border: 1px solid;
+}
+.resume:hover{
+    background-color: rgb(125,212,128,0.3);
 }
 .name h2{
 	position: absolute;
