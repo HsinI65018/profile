@@ -47,10 +47,14 @@ li{
     height: 40px;
     text-align: center;
     line-height: 40px;
-    border: 1px solid;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(119,49,40,0.4);
 }
 .github:hover{
-    background-color: rgb(117,191,209,0.4);
+    color: #19394D;
+    border: 1px solid white;
+    background-color: rgb(244,251,249,0.5);
 }
 .resume{
     position: absolute;
@@ -64,10 +68,14 @@ li{
     height: 40px;
     text-align: center;
     line-height: 40px;
-    border: 1px solid;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(119,49,40,0.4);
 }
 .resume:hover{
-    background-color: rgb(125,212,128,0.3);
+    color: #19394D;
+    border: 1px solid white;
+    background-color: rgb(244,251,249,0.5);
 }
 .name h2{
 	position: absolute;
