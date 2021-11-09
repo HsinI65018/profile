@@ -16,28 +16,16 @@ $(document).ready(function () {
             $('.nav li').css('background-color','white')
             $('.nav li:eq(1)').css('background-color','rgba(157,195,230')
         }
-        else if($(window).scrollTop()>=$('.section2').offset().top && $(window).scrollTop()<$('.section3').offset().top){
-            $('.nav li').css('background-color','white')
-            $('.nav li:eq(2)').css('background-color','rgba(157,195,230')
-        }
-        else if($(window).scrollTop()>=$('.section3').offset().top && $(window).scrollTop()<$('.section4').offset().top){
-            $('.nav li').css('background-color','white')
-            $('.nav li:eq(3)').css('background-color','rgba(157,195,230')
-        }
-        else if($(window).scrollTop()>=$('.section4').offset().top && $(window).scrollTop()<$('.section5').offset().top){
-            $('.nav li').css('background-color','white')
-            $('.nav li:eq(4)').css('background-color','rgba(157,195,230')
-        }
     })
     //判斷滾輪是否到底//
-    $(window).on('scroll', function() {
+    /*$(window).on('scroll', function() {
         if ($(window).scrollTop() >= $('.section5').offset().top + $('.section5').outerHeight() - window.innerHeight) {
             $('.nav li').css('background-color','white')
             $('.nav li:eq(5)').css('background-color','rgba(157,195,230')
             $('.goto_top').fadeOut()
             $('.goto_top').fadeIn()
         }
-    })
+    })*/
     //控制前兩張的頁面圓點//
     $(".nav li:eq(0)").click(function(){
         $("html,body").animate({"scrollTop":"0px"})
@@ -62,7 +50,4 @@ $(document).ready(function () {
             $(".nav li:eq("+e.data.id+")").css("background-color","rgba(157,195,230)")
         })
     }
-    $('.goto_top').click(function(){
-        $('html,body').animate({'scrollTop':'0'})
-    })
 })
