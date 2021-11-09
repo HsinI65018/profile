@@ -155,22 +155,14 @@ b{
 	font-size: 18px;
 	color: #37A484;
 }
-.work{
-    position: absolute;
-    top: 525px;
-    left: 300px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: Book Antiqua,微軟正黑體;
-    line-height: 33px;
-    color: #19394D;
-    
-}
 .section2 a{
     font-size: 17.5px;
     font-weight: bold;
     text-decoration: none;
     color: #723399;
+}
+.section2 a:hover{
+    text-decoration: underline;
 }
 .section3{
     position: absolute;
